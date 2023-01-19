@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/shared.css">
+    <link rel="stylesheet" href="style/home-style.css">
+    <link rel="stylesheet" href="style/checkout.css">
+    <link rel="stylesheet" href="style/calendar.css">
+    <link rel="stylesheet" href="style/style-footer.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head" id="myHeader">
+            <div class="s1">
+                <div>
+                    <a href="index.html"><img src="img/logo/logo2.png" width="250px"></a>
+                </div>
+                <div class="search">
+                    <div class="contain">
+                        <span><input type="text" id="myInput" onkeyup="myFunction()" onclick="return false" placeholder="Search..."></span>
+                        <span class="button1">
+                            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                    <span class="button2">
+                        <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                    </span>
+                </div>
+            </div>
+            <div class="s2">
+                <header id="myHeader">
+                    <div class="menu">
+                        <li><a class="" href="index.html"><i class="fa fa-home" style="font-size: 20px"></i>Home</a>
+                        </li>
+                        <li><a href="product.html">Product</a>
+                        </li>
+                        <li><a href="">Type <i class="fa fa-caret-down"></i></a>
+                            <ul class="brand">
+                                <a href="" onclick="menu()" onclick="return false">
+                                    <li ><span>1</span>Blazers</li>
+                                </a>
+                                <a href="">
+                                    <li><span>2</span>Dresses</li>
+                                </a>
+                                <a href="">
+                                    <li><span>3</span>Shirts</li>
+                                </a>
+                                <a href="">
+                                    <li><span>4</span>T-shirts</li>
+                                </a>
+                                <a href="">
+                                    <li><span>5</span>Jeans</li>
+                                </a>
+                                <a href="">
+                                    <li><span>6</span>Shorts</li>
+                                </a>
+
+                            </ul>
+                        </li>
+                        <li onclick="man()"><a href="" onclick="return false"><a href="#">Man</a></li>
+                            <li onclick="woman()"><a href="" onclick="return false">Woman</a> </li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="About_us.html">About Us</a></li>
+                            
+                </header>
+            </div>
+        </div>
+        </div>
+        <main>
+            <div class="contain1" id="">
+                <div class="cart">
+                    <h2>Shopping Cart</h2>
+                    <ul class="breadcrumb">
+                        <li>Home</li>
+                        <li>Shopping Cart</li>
+                    </ul>
+                    <span class="count">2 items in the bag</span>
+                </div>
+
+                <section class="contain1">
+                    <section>
+                        <ul class="products">
+                            <li class="row1">
+                                <div class="col left">
+                                    <div class="thumbnail">
+                                        <a href="#">
+                                            <img src="img/product/woman/jean-1.jpg" alt="" width="100px">
+                                        </a>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="name"><a href="#">Jean 1</a></div>
+                                        <div class="description">
+                                            High-waist rigid jeans. Five-pocket design. Ripped details with a front zip fly and metal button fastening.
+                                        </div>
+                                        <div class="price">$5.99</div>
+                                    </div>
+                                </div>
+
+                                <div class="col right">
+                                    <div class="quantity">
+                                        <input type="number" class="quantity" step="1" value="6" />
+                                    </div>
+
+                                    <div class="remove">
+                                        <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="row1">
+                                <div class="col left">
+                                    <div class="thumbnail">
+                                        <a href="#">
+                                            <img src="img/product/woman/jean-2.jpg" alt="" width="100px">
+                                        </a>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="name"><a href="#">Jean 2</a></div>
+                                        <div class="description">
+                                            High-waist jeans with a five-pocket design. Front zip fly and metal top button fastening.
+                                        </div>
+                                        <div class="price">$9.99</div>
+                                    </div>
+                                </div>
+
+                                <div class="col right">
+                                    <div class="quantity">
+                                        <input type="number" class="quantity" step="1" value="1" autocomplete="off" />
+                                    </div>
+
+                                    <div class="remove">
+                                        <button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+        </main>
+        
+    </div>
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/product.js"></script>
+</body>
+
+</html>

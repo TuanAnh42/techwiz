@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="style/shared.css">
+	  <link rel="stylesheet" type="text/css" href="style/show_product.css">
+	  <link rel="stylesheet" href="style/home-style.css">
+      <link rel="stylesheet" href="style/style-footer.css">
+      <link rel="stylesheet" href="style/calendar.css">
+      
+	  <title></title>
+</head>
+<body>
+    <div class="container" >
+        <form action="" method="POST">
+            <div class="head" id="myHeader">
+                <div class="s1">
+                    <div>
+                        <a href="index.html"><img src="img/logo/logo2.png" width="250px"></a>
+                    </div>
+                    <div class="search">
+                        <div class="contain">
+                            <span><input type="text" id="myInput" onkeyup="myFunction()" onclick="return false" placeholder="Search..."></span>
+                            <span class="button1">
+                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                        <span class="button2">
+                            <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="s2">
+                    <header id="myHeader">
+                        <div class="menu">
+                            <li><a class="" href="index.html"><i class="fa fa-home" style="font-size: 20px"></i>Home</a>
+                            </li>
+                            <li><a href="product.html">Product</a>
+                            </li>
+                            <li><a href="">Type <i class="fa fa-caret-down"></i></a>
+                                <ul class="brand">
+                                    <a href="" onclick="menu()" onclick="return false">
+                                        <li ><span>1</span>Blazers</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>2</span>Dresses</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>3</span>Shirts</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>4</span>T-shirts</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>5</span>Jeans</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>6</span>Shorts</li>
+                                    </a>
+
+                                </ul>
+                            </li>
+                            <li onclick="man()"><a href="" onclick="return false"><a href="#">Man</a></li>
+                            <li onclick="woman()"><a href="" onclick="return false">Woman</a> </li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="About_us.html">About Us</a></li>
+                           
+                    </header>
+                </div>
+            </div>
+</div>
+<div id="body_background">
+	<div class="product1" >
+		<div class="hr"></div>
+		<div class="title">
+	<div class="tx">Product Information</div>
+	<div class="texts"> 
+	</div>
+	</div>
+	</div>
+	<div class="product">
+	<div class="img_s1">
+		<div class="img_a1 bd main-img">
+			<center><img src="img/img1/bo-ao-quan-thun-be-trai-dai-ngu-ngon-cf-b1220043-1-2y-xanh-xam.jpg"onclick="showing(this.src)"></center>
+		</div>
+		<div class="img_a2 ">
+			<div class="bd">
+				<img src="img/img1/bo-thun-be-trai-dai-ngu-ngon-cf-b1020016-1-2y-xanh-dam.jpg" onclick="showing(this.src)">
+			</div>
+			<div class="bd">
+				<img src="img/img1/images (1).jpg"onclick="showing(this.src)">
+			</div>
+			<div class="bd">
+				<img src="img/img1/bo-thun-be-trai-dai-ngu-ngon-cf-b1020016-1-2y-xanh-dam.jpg"onclick="showing(this.src)">
+			</div>
+
+		</div>
+	</div>
+	<div class="information">
+		<h2>Product Name: Sleepwear</h2><br>
+		<h3>Type: Blarers</h3><br>
+		<h3>Used Time: 2 Month</h3><br>
+		<h3>Colour: Gray</h3><br>
+		<h3>Price: 100$</h3><br>
+		<h3>Description : Loose-fitting blazer featuring a lapel collar, long sleeves with pronounced shoulders, front flap pockets and front double-breasted button fastening. </h3>
+        <button class="bt">Add To Card</button>
+        <button class="bt">See More</button>
+        <button class="bt"onclick="come_back()">Previous Page</button></a>
+	</div>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript">
+	function come_back(){
+          history.back();
+      }
+        var Img = document.querySelector('.main-img img');
+        function showing(pic) {
+            Img.src = pic;
+        }
+
+
+        window.onscroll = function() {aFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function aFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        
+ </script>
+ <script src="javascript/product.js"></script>
+ <script src="javascript/calendar.js"></script>
+</html>

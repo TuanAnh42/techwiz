@@ -1,0 +1,161 @@
+
+.product1{
+	width: 80%;
+    padding-top: 20px;	
+    margin: auto;
+
+}
+.texts{
+  width: 0;
+  height: 0;
+  border-top: 30px solid #c0d7dd;
+  border-right: 40px solid transparent;
+}
+.tx{
+	height: 30px;
+	background-color: #c0d7dd;
+	padding: 4px;
+}
+.title{
+	margin-top: 5px;
+	display: flex;
+}
+.hr{
+	height: 1px;
+	background-color: #c0d7dd;
+	width: 100%;
+}
+/* title 2*/
+.product2{
+	width: 65%;
+    padding-top: 20px;	
+	margin: auto;
+}
+.text2{
+	width: 0;
+  height: 0;
+  border-top: 30px solid #ffd9d4;
+  border-right: 40px solid transparent;
+}
+.tx2{
+	height: 30px;
+	background-color: #ffd9d4;
+	padding: 4px;
+}
+.title2{
+	margin-top: 5px;
+	display: flex;
+}
+.hr2{
+	height: 1px;
+	background-color: #ffd9d4;
+	width: 100%;
+}
+
+.product3{
+	width: 100%;
+	margin-top: 20px;
+}
+.hr3{
+	height: 2px;
+	background-color: #ffd9d4;
+	width: 100%;
+}
+/* tilte img*/
+
+.img_tilte{
+	width: 70%;
+	margin: auto;
+	height: auto;
+}
+.img_tilte img {
+	width: 100%;
+	height: auto;
+}
+.body01{
+	padding-top: 30px;
+}
+.body02{
+	padding-top: 30px;
+}
+
+/* show sp */
+a .sp{
+	height: 330px;
+	margin-right:3% ;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	transition: 0.5s;
+	background-color: white;
+
+}
+
+.sp img {
+	width: 100%;
+	height: auto;
+}
+ a .sp:hover{
+	margin-top: 10px;
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+.show a {
+	width: 24%;
+}
+
+
+.sp h4{
+	color: black;
+	margin-bottom: 8px;
+}
+.sp .tt_sp {
+	margin-left: 25px;
+}
+.img_sp{
+	height: 255px;
+}
+/* show sp2 */
+a .sp2{
+	height: 350px;
+	margin-right:7% ;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	transition: 0.5s;
+	background-color: white;
+
+}
+.show2 a {
+	width: 24%;
+}
+.img_sp2{
+	height: 275px;
+}
+.sp2 .tt_sp {
+	margin-left: 25px;
+}
+.sp2 h3{
+	color: black;
+	margin-bottom: 8px;
+}
+ a .sp2:hover{
+	margin-top: 10px;
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+.show2{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 67%;
+	margin: auto;
+}
+.body_background{
+	background: linear-gradient(to top,#c0d7dd ,#c5a8c0 );
+}
+.bt{
+	height: 28px;
+	width: 150px;
+	border-radius: 3px 16px;
+	margin-left: 10px;
+	margin-top: 30px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/shared.css">
+    <link rel="stylesheet" type="text/css" href="style/product.css">
+    <link rel="stylesheet" href="style/home-style.css">
+    <link rel="stylesheet" href="style/style-footer.css">
+    <link rel="stylesheet" href="style/calendar.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="contain2">
+        <form action="" method="POST">
+            <div class="head" id="myHeader">
+                <div class="s1">
+                    <div>
+                        <a href="index.html"><img src="img/logo/logo2.png" width="250px"></a>
+                    </div>
+                    <div class="search">
+                        <div class="contain">
+                            <span><input type="text" id="myInput" onkeyup="myFunction()" onclick="return false" placeholder="Search..."></span>
+                            <span class="button1">
+                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                        <span class="button2">
+                            <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="s2">
+                    <header id="myHeader">
+                        <div class="menu">
+                            <li><a class="" href="index.html"><i class="fa fa-home" style="font-size: 20px"></i>Home</a>
+                            </li>
+                            <li><a href="product.html">Product</a>
+                            </li>
+                            <li><a href="">Type <i class="fa fa-caret-down"></i></a>
+                                <ul class="brand">
+                                    <a href="" onclick="menu()" onclick="return false">
+                                        <li ><span>1</span>Blazers</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>2</span>Dresses</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>3</span>Shirts</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>4</span>T-shirts</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>5</span>Jeans</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>6</span>Shorts</li>
+                                    </a>
+
+                                </ul>
+                            </li>
+                            <li onclick="man()"><a href="" onclick="return false"><a href="#">Man</a></li>
+                            <li onclick="woman()"><a href="" onclick="return false">Woman</a> </li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="About_us.html">About Us</a></li>
+                            
+                            
+                    </header>
+                </div>
+            </div>
+            
+            <main>
+                <div class="body01" id="body_background">
+                    <div class="img_tilte">
+                        <img src="img/img1/z3635370419347_b61c09d0605d71b37d758377e31521be.jpg">
+                    </div>
+                    <div class="showw">
+                        <div class="tools">
+                            <div class="title_tools">List:</div>
+                            <div class="tools1">
+                                <a href="" onclick="menu()" onclick="return false">
+                                    <div class="tools2" >Blazers</div>
+                                    <div class="hr2"></div>
+                                </a>
+                                <a href="">
+                                    <div class="tools2">Dresses</div>
+                                    <div class="hr2"></div>
+                                </a><a href="">
+                                    <div class="tools2">Shirts</div>
+                                    <div class="hr2"></div>
+                                </a><a href="">
+                                    <div class="tools2">Jeans</div>
+                                    <div class="hr2"></div>
+                                </a><a href="">
+                                    <div class="tools2">T-shirt</div>
+                                    <div class="hr2"></div>
+                                </a><a href="">
+                                    <div class="tools2">Shorts</div>
+                                    <div class="hr2"></div>
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <div class="all_product01">
+
+                            <div class="product3">
+                                <div class="hr2"></div>
+                                <div class="title2">
+                                    <div class="tx2">All Products</div>
+                                    <div class="text2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="show" id="products">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+
+    </div>
+
+</body>
+<script type="text/javascript">
+    window.onscroll = function () { aFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function aFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+</script>
+<script src="javascript/product.js"></script>
+<script src="javascript/search.js"></script>
+<script src="javascript/calendar.js"></script>
+
+</html>

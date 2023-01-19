@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title>Thrift Fashion Store</title>
+    <script src="javascript/calendar.js"></script>
+    <link rel="stylesheet" href="style/home-style.css">
+    <link rel="stylesheet" href="style/style-footer.css">
+    <link rel="stylesheet" href="style/calendar.css">
+    <link rel="stylesheet" href="style/shared.css">
+    <link rel="stylesheet" href="style/slide.css">
+</head>
+<body>
+    <div class="contain2" >
+        <form action="" method="POST" onsubmit="return savadata()">
+            <div class="head" id="myHeader">
+                <div class="s1">
+                    <div>
+                        <a href="index.html"><img src="img/logo/logo2.png" width="250px"></a>
+                    </div>
+                    <div class="search">
+                        <div class="contain">
+                            <span><input type="text" id="myInput" onkeyup="myFunction()" onclick="return false" placeholder="Search..."></span>
+                            <span class="button1">
+                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                        <span class="button2">
+                            <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="s2">
+                    <header id="myHeader">
+                        <div class="menu">
+                            <li><a class="" href="index.html"><i class="fa fa-home" style="font-size: 20px"></i>Home</a>
+                            </li>
+                            <li><a href="product.html">Product</a>
+                            </li>
+                            <li><a href="">Type <i class="fa fa-caret-down"></i></a>
+                                <ul class="brand">
+                                    <a href="">
+                                        <li ><span>1</span>Blazers</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>2</span>Dresses</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>3</span>Shirts</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>4</span>T-shirts</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>5</span>Jeans</li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>6</span>Shorts</li>
+                                    </a>
+
+                                </ul>
+                            </li>
+                            <li onclick="man()"><a href="" onclick="return false"><a href="#">Man</a></li>
+                            <li onclick="woman()"><a href="" onclick="return false">Woman</a> </li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="About_us.html">About Us</a></li>
+                            
+                    </header>
+                </div>
+            </div>
+            <div id="body_background">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <a href="">
+                        <img src="img/img1/Untitled.png" height="500px" width="100%">
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <a href="">
+                        <img src="img/img1/con-qua-den-co-phong-cach-nhu-mi-diu-dang-de-phoi-do.jpg" height="500px"
+                            width="100%">
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <a href="">
+                        <img src="img/img1/5-dia-chi-thrift-shop-do-second-hand-dep-hon-ca-hang-hieu-o-tphcm-202011161115431016.jpg"
+                            height="500px" width="100%">
+                    </a>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+            
+            
+            <div class="WELCOME">
+                <div class="WELCOME-1" style="margin-top: 30px;">
+                  <h2 class="e05">HELLO THERE!</h2>
+                  <h2 class="e04">WELCOME TO THRIFT FASHION STORE</h2><br>
+                  <p>Nowadays, recycling, reuse or sustainability are not just words, but many people have taken action to protect the planet. Instead of throwing away old clothes that are still in good condition, these clothes can be sold at thrift or used clothing stores.
+                  </p>
+                  <p>Simply put, thrift shopping is the purchase of second hand clothing. The site promotes recycling and sustainability practices, and also offers affordable clothing to individuals who cannot afford brand new clothing.
+                  </p>
+                </div>
+                <div class="WELCOME-2" >
+                  <div class="img-00">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/a4a940d77680645fcbaa2afd8aafb497b7f2d5d0/ee527/images/cont_img-003.png" class="img-010">
+                  </div>
+                  <h2 class="e04"><center>100% SATISFACTION GUARANTEE</center></h2>
+                </div>
+              </div>
+            
+            <center style="margin-top: 30px;">
+                <h1 style="color: red;">Hot
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/></svg>
+              </h1>
+            </center>
+            <center>Hot Fashion Products Today</center>
+            <div class="body03">
+                <div class="top">
+                 <div class="hot ht1">
+                     <div class="ht2">
+                         <h1 style="padding-right: 20px;">Jackets</h1>
+                         <p style="padding-top: 30px;padding-right: 20px;"><b>Price:1000.0$</b></p>
+                         <p style="padding-top: 30px;padding-right: 20px;"><b>Size: XL</b></p>
+                         <center><button class="bt bti">Order</button></center>
+                     </div>
+                     <div class="ht3">
+                         <img src="img/product/man/Jackets-1.jpg">
+                     </div>             
+                 </div>
+      
+                 <div class="hot">
+                     <div class="ht2">
+                         <h1 style="padding-right: 20px;">Blazers</h1>
+                         <p style="padding-top: 30px;padding-right: 20px;"><b>Price:1000.0$</b></p>
+                         <p style="padding-top: 30px;padding-right: 20px;"><b>Size: XL</b></p>
+                         <center><button class="bt bti">Order</button></center>
+                     </div>
+                     <div class="ht3">
+                         <img src="img/product/man/Blazers-3.jpg" width="200px">
+                     </div>   
+                 </div>
+                </div>
+            </div>
+            </div>
+            
+
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-3 col-md-4 mb-60">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Find us</h4>
+                                        <span>54 Le Thanh Nghi, Ha Noi, Viet Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Call us</h4>
+                                        <span>+843234224344</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail us</h4>
+                                        <span>mail@aptechlearning.edu.vn</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 mb-50">
+                                <div class="footer-widget">
+
+                                    <div class="footer-text">
+                                        <p>Thrift Fashion Store provides an easy shopping facility for second hand
+                                            clothing in
+                                            excellent condition to the customers, wherein they can sit at one place and
+                                            shop online
+                                            anytime, anywhere 24/7.</p>
+                                    </div>
+                                    <div class="footer-social-icon">
+                                        <span>Follow us</span>
+                                        <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                        <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Useful Links</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Our Services</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                                <div class="right">
+                                    <div class="footer">
+                                        <div class="year" onclick="clock()">
+                                            <span id="month"></span>
+                                        </div>
+                                        <div class="hour" onclick="clock()">
+                                            
+                                            <div>
+                                                <span id="hour">00</span><span>Hour</span>
+                                            </div>
+                                            <div>
+                                                <span id="minute">00</span><span>Minute</span>
+                                            </div>
+                                            <div>
+                                                <span id="second">00</span><span>Second</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2018, All Right Reserved <a href="#">TA</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </footer>
+        </form>
+    </div>
+    <div class="test">
+        <button>Thêm vào giỏ hàng</button>
+    </div>
+</body>
+<script>
+    function savedata(){
+      var  userlist=[];
+        var user={
+            "fullname": $('[name=fullname]').val(),
+        }
+        userlist.push(user)
+        var json = JSON.stringify(userlist)
+		localStorage.setItem('userlist', json)
+
+		return false;
+    }
+</script>
+
+<script type="text/javascript">
+
+    let slideIndex = 1;
+    var timer = null;
+    showSlides(slideIndex);
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+        clearTimeout(timer);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n == undefined) { n = ++slideIndex }
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        timer = setTimeout(showSlides, 5000);
+    }
+</script>
+<script type="text/javascript">
+    window.onscroll = function () { aFunction() };
+
+    var header = document.querySelector(".s2");
+    var sticky = header.offsetTop;
+
+    function aFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+</script>
+<script src="javascript/product.js"></script>
+<script src="javascript/calendar.js"></script>
+</body>
+
+</html>
